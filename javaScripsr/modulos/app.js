@@ -8,3 +8,10 @@ function calcularArea(){
     console.log(area)
     document.querySelector("#txtResultado").value = area.toFixed(2)
 }
+
+document.querySelector("#btnCalcularAreaTriangulo").addEventListener("click",()=>{
+    const base = document.querySelector("#txtBase").value
+    const altura = document.querySelector("#txtAltura").value
+    const area = areatriangulo(base, altura)
+    document.querySelector("#txtRespuestaTriangulo").value = area
+})
